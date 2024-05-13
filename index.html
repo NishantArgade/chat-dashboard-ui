@@ -1,0 +1,535 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="css/tailwindcss.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <title>Chat Dashboard</title>
+</head>
+
+<body>
+  <div class="flex w-screen h-screen">
+    <!-- menu sidebar -->
+    <section class="flex flex-col items-center gap-y-12 bg-white py-5 w-[4.5rem] h-full">
+      <a href="/"><img src="images/Frame.svg" alt=""></a>
+
+      <div class="flex flex-col items-center gap-y-8">
+        <button><img src="images/shape.svg" alt=""></button>
+        <button class="bg-orange-600 p-[0.42rem] rounded-full"><img src="images/shape2.svg" alt=""></button>
+        <button><img src="images/shape3.svg" alt=""></button>
+        <button><img src="images/shape4.svg" alt=""></button>
+        <button><img src="images/shape5.svg" alt=""></button>
+        <button><img src="images/shape6.svg" alt=""></button>
+      </div>
+
+      <button class="mt-auto mb-3"><img src="images/shape8.svg" alt=""></button>
+    </section>
+
+    <!-- main container -->
+    <main class="flex flex-1 bg-white">
+
+      <!-- chat section sidebar -->
+      <section class="flex flex-col bg-[#F7F5F4] py-3 max-w-[32%]">
+        <!-- user profile  -->
+        <div class="border-gray-200 px-5 pb-5 border-b-[1.71px]">
+          <div class="flex items-center gap-x-5 px-2">
+            <a href="#" class="rounded-full w-9 h-9">
+              <img src="images/dp10.svg" alt="">
+            </a>
+            <button>
+              <p class="font-semibold text-sm">John Doe</p>
+              <p class="text-[#A19791] text-xs">My Account
+              <p>
+            </button>
+          </div>
+        </div>
+        <!-- other sections -->
+        <div class="mt-2 px-5">
+          <!-- online users   -->
+          <div>
+            <p class="pb-1 font-bold text-lg">Online Now</p>
+            <div class="flex items-center gap-x-5">
+              <a href="#" class="relative rounded-full w-9 h-9">
+                <img src="images/dp3.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </a>
+              <a href="#" class="relative rounded-full w-9 h-9">
+                <img src="images/dp8.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </a>
+              <a href="#" class="relative rounded-full w-9 h-9">
+                <img src="images/dp1.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </a>
+              <a href="#" class="relative rounded-full w-9 h-9">
+                <img src="images/dp6.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </a>
+              <button class="flex justify-center items-center bg-orange-100 rounded-full w-9 h-9">
+                <span class="font-medium text-orange-500 text-xs">18+</span>
+              </button>
+            </div>
+          </div>
+          <!-- message section -->
+          <div class="flex justify-between items-center my-[0.70rem]">
+            <p class="font-bold text-sm">Messages</p>
+            <div class="flex items-center gap-x-3">
+              <button><img src="images/shape9.svg" class="w-[0.80rem] h-[0.80rem]"></button>
+              <button><img src="images/shape10.svg" class="w-[0.80rem] h-[0.80rem]" alt=""></button>
+            </div>
+          </div>
+          <!-- search bar -->
+          <div class="relative flex shadow-sm rounded-xl">
+            <img src="images/shape11.svg" class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2"
+              alt="">
+            <input type="text"
+              class="border-2 border-gray-100 focus:border-blue-500 focus:outline-none focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 p-[0.40rem] pr-3 rounded-xl w-full text-xs ps-8"
+              placeholder="Search">
+          </div>
+          <!-- user list  -->
+          <div class="flex flex-col gap-y-[0.4rem] mt-4 pr-2 h-[23.5rem] overflow-y-auto">
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp5.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Marina Jolly</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <img width="15px" src="images/shape13.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+                  <p class="w-44 text-[#A19791] text-xs"> Marina is typing...
+                  <p>
+                </div>
+              </div>
+              <div
+                class="top-1/2 right-0 absolute flex justify-center items-center bg-orange-500 rounded-full w-5 h-5 font-medium text-white -translate-y-1/2">
+                <p class="text-[0.70rem]">2</p>
+              </div>
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp6.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Jackson Roy</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <img src="images/shape14.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+                  <p class="w-44 text-[#A19791] text-xs">Sent a picture
+                  <p>
+                </div>
+              </div>
+
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp7.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Hafsa shaikh</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <p class="w-44 text-[#A19791] text-xs">Meet me before presenting...
+                  <p>
+                </div>
+              </div>
+              <div
+                class="top-1/2 right-0 absolute flex justify-center items-center bg-orange-500 rounded-full w-5 h-5 font-medium text-white -translate-y-1/2">
+                <p class="text-[0.70rem]">3</p>
+              </div>
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp8.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Alix joseph</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <p class="w-44 text-[#A19791] text-xs">How did you prepared......
+                  <p>
+                </div>
+              </div>
+
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 bg-white shadow-sm p-2 rounded-2xl">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/groupDp.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <div class="flex justify-between items-center">
+                  <p class="font-medium text-sm">College Goup</p>
+                  <p class="text-[#A19791] text-[0.63rem]">09:35</p>
+                </div>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <p class="w-44 text-[#A19791] text-xs"><span class="text-black">You:</span> What about wednesday......
+                  <p>
+                </div>
+              </div>
+
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp2.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Rockstar Benj</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <img src="images/shape12.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+                  <p class="w-44 text-[#A19791] text-xs">Sent an attachment
+                  <p>
+                </div>
+              </div>
+              <div
+                class="top-1/2 right-0 absolute flex justify-center items-center bg-orange-500 rounded-full w-5 h-5 font-medium text-white -translate-y-1/2">
+                <p class="text-[0.70rem]">2</p>
+              </div>
+            </a>
+
+            <a href="#" class="relative flex items-center gap-x-3 p-2">
+              <div class="relative rounded-full w-9 h-9">
+                <img src="images/dp9.svg" alt="">
+                <span
+                  class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                </span>
+              </div>
+              <div>
+                <p class="font-medium text-sm">Max Hob</p>
+                <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
+                  <p class="w-44 text-[#A19791] text-xs">Next presentation will be.......
+                  <p>
+                </div>
+              </div>
+
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- chat section -->
+      <section class="flex flex-col flex-1 py-3">
+
+        <!-- chat header -->
+        <div class="border-gray-200 px-3 pb-3 border-b-[1.71px]">
+          <div class="flex items-center gap-x-4 px-2">
+
+            <button class="p-[0.15rem] rounded-full w-12 h-auto ring-2 ring-gray-300 dark:ring-green-300">
+              <img class="" src="images/dp10.svg" alt="Bordered avatar">
+            </button>
+
+            <div class="w-full">
+              <button class="mb-0 font-medium text-sm">College Group</button>
+              <button class="flex -space-x-2 rtl:space-x-reverse">
+                <img class="border-2 border-white rounded-full w-5 h-5" src="images/dp10.svg" alt="">
+                <img class="border-2 border-white rounded-full w-5 h-5" src="images/dp10.svg" alt="">
+                <img class="border-2 border-white rounded-full w-5 h-5" src="images/dp10.svg" alt="">
+                <div
+                  class="flex justify-center items-center border-2 border-white bg-[#FF731D] rounded-full w-5 h-5 font-medium text-[0.6rem] text-white">
+                  +7</div>
+              </button>
+            </div>
+
+            <div class="flex items-center gap-x-2">
+              <button class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-8 h-8">
+                <img class="w-[0.8rem] h-[0.8rem]" src="images/shape15.svg" alt="">
+              </button>
+              <button class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-8 h-8">
+                <img class="w-[0.8rem] h-[0.8rem]" src="images/shape16.svg" alt="">
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <!-- chat body -->
+        <div class="bg-white px-5 h-[40rem] overflow-auto">
+
+          <!-- Yesterday chat -->
+          <div class="pt-4">
+            <p class="pb-1 text-center text-xs">Yesterday</p>
+            <div class="flex flex-col gap-y-3">
+
+              <div class="flex gap-x-3">
+                <a href="#" class="relative rounded-full w-9 h-9">
+                  <img src="images/dp4.svg" alt="">
+                </a>
+                <div>
+                  <div>
+                    <a href="#" class="font-medium text-xs">Mojixa Tan</a>
+                    <span class="text-[#A19791] text-[0.63rem]">09:03 pm</span>
+                  </div>
+                  <div class="flex flex-col gap-y-2 mt-2">
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">Hi, how are you all?</p>
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">How many of you prepared the
+                      prsentation?</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-x-3">
+                <a href="#" class="relative rounded-full w-9 h-9">
+                  <img src="images/dp2.svg" alt="">
+                  <span
+                    class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-300 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
+                  </span>
+                </a>
+                <div>
+                  <div>
+                    <a href="#" class="font-medium text-xs">Rockstar Benj</a>
+                    <span class="text-[#A19791] text-[0.63rem]">09:31 pm</span>
+                  </div>
+                  <div class="flex flex-col gap-y-2 mt-2">
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">Hello Mojixa! I am just about to
+                      start the prepration.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Today's Chat -->
+          <div class="pt-4">
+            <p class="pb-1 text-center text-xs">Today</p>
+            <div class="flex flex-col gap-y-3">
+
+              <div class="flex gap-x-3">
+                <a href="#" class="relative rounded-full w-9 h-9">
+                  <img src="images/dp3.svg" alt="">
+                </a>
+                <div>
+                  <div>
+                    <a href="#" class="font-medium text-xs">Lorel morph</a>
+                    <span class="text-[#A19791] text-[0.63rem]">09:20 am</span>
+                  </div>
+                  <div class="flex flex-col gap-y-2 mt-2 max-w-[70%]">
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">
+                      Appologise guys i will not be able to contribute in presentation as i am having fever since 2
+                      days.
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flex gap-x-3">
+                <a href="#" class="relative rounded-full w-9 h-9">
+                  <img src="images/dp4.svg" alt="">
+
+                </a>
+                <div>
+                  <div>
+                    <a href="#" class="font-medium text-xs">Mojixa Tan</a>
+                    <span class="text-[#A19791] text-[0.63rem]">10:45 am</span>
+                  </div>
+                  <div class="flex flex-col gap-y-2 mt-2">
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">No issue, take some rest.</p>
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl text-xs">What about others?</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- Your Chat -->
+          <div class="flex justify-end">
+            <div class="flex gap-x-3">
+              <div>
+                <div>
+                  <a href="#" class="font-medium text-xs">You</a>
+                  <span class="text-[#A19791] text-[0.63rem]">10:45 am</span>
+                </div>
+                <div class="flex flex-col gap-y-2 mt-2">
+                  <p class="bg-[#FF731D] p-2 rounded-b-xl rounded-tl-xl text-white text-xs">I just completed it last
+                    night.</p>
+                </div>
+              </div>
+              <a href="#" class="relative rounded-full w-9 h-9">
+                <img src="images/dp6.svg" alt="">
+              </a>
+            </div>
+          </div>
+
+          <!-- user typing -->
+          <div class="flex gap-x-3">
+            <a href="#" class="relative rounded-full w-9 h-9">
+              <img src="images/dp9.svg" alt="">
+            </a>
+            <div>
+              <a href="#" class="font-medium text-xs">Max Hob</a>
+              <span class="text-[#A19791] text-[0.63rem]">is typing...</span>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- chat input -->
+        <div class="flex justify-around items-center px-8 pt-1 border-t-[1px]">
+          <div class="relative flex rounded-xl w-[65%]">
+            <img src="images/shape13.svg" class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2"
+              alt="">
+            <input type="text" placeholder="Your Message..."
+              class="border-2 border-gray-100 focus:border-blue-500 focus:outline-none focus:ring-blue-500 focus:ring-opacity-50 p-[0.40rem] pr-2 rounded-xl w-full text-xs ps-8">
+          </div>
+          <div class="flex items-center gap-x-4">
+            <button>
+              <img src="images/shape17.svg" class="w-[0.80rem] h-[0.80rem]" alt="">
+            </button>
+            <button>
+              <img src="images/shape14.svg" class="w-[0.80rem] h-[0.80rem]" alt="">
+            </button>
+            <button>
+              <img src="images/shape12.svg" class="w-[0.80rem] h-[0.80rem]" alt="">
+            </button>
+            <button>
+              <img src="images/shape18.svg" class="w-[0.80rem] h-[0.80rem]" alt="">
+            </button>
+          </div>
+        </div>
+
+      </section>
+
+    </main>
+
+    <!-- right sidebar -->
+    <section class="flex flex-col border-gray-200 py-3 border-l-[1.71px] w-[22%]">
+      <!-- header -->
+      <div class="flex flex-col items-center gap-x-4 px-5 pb-2">
+        <img class="rounded-full w-11 h-11" src="images/dp10.svg" alt="Bordered avatar">
+        <p class="mt-1 font-semibold text-sm">College Group</p>
+        <p class="mt-1 text-[#A19791] text-xs">@collegefriends</p>
+      </div>
+
+      <!-- tabs -->
+      <div class="flex justify-around border-gray-200 border-y-[1.71px] px-5 pt-2 text-xs">
+        <button class="pb-2 font-medium text-[#A19791]">Participants</button>
+        <button class="border-[#FF731D] pb-2 border-b-[2.6px] font-medium">Shared files</button>
+      </div>
+
+      <div class="flex-1 overflow-auto">
+        <!-- shared media -->
+        <div>
+          <div class="flex justify-between items-center px-5 py-3">
+            <div class="flex items-center gap-2">
+              <img src="images/shape22.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+              <p class="font-medium text-xs">Shared Media</p>
+            </div>
+            <button><img src="images/shape21.svg" class="w-[0.8rem] h-[0.8rem]" alt=""></button>
+          </div>
+          <button class="gap-3 grid grid-cols-2 grid-rows-2 mx-3 px-5 w-[15.5rem]">
+
+            <img src="images/mediaImg1.svg" class="w-[6rem] h-[6rem]" alt="">
+            <img src="images/mediaImg2.svg" class="w-[6rem] h-[6rem]" alt="">
+            <img src="images/mediaImg3.svg" class="w-[6rem] h-[6rem]" alt="">
+            <img src="images/mediaImg4.svg" class="w-[6rem] h-[6rem]" alt="">
+
+          </button>
+        </div>
+        <!-- shared files -->
+        <div>
+          <div class="flex items-center px-5 py-3">
+            <div class="flex items-center gap-2">
+              <img src="images/shape19.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+              <p class="font-medium text-xs">Shared Files</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-3">
+            <div class="flex justify-between items-center mx-3 px-5">
+              <button class="flex items-center gap-x-4">
+                <div class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-7 h-7">
+                  <img src="images/shape19.svg" alt="">
+                </div>
+                <div class="text-xs">
+                  <p>Architechture21.doc</p>
+                  <p class="text-[#A19791] text-[0.65rem]">04/09/2023 at 09:34am</p>
+                </div>
+              </button>
+              <button> <img src="images/shape21.svg" class="w-[0.8rem] h-[0.8rem]" alt=""></button>
+
+            </div>
+            <div class="flex justify-between items-center mx-3 px-5">
+              <button class="flex items-center gap-x-4">
+                <div class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-7 h-7">
+                  <img src="images/shape19.svg" alt="">
+                </div>
+                <div class="text-xs">
+                  <p>Architechture28.doc</p>
+                  <p class="text-[#A19791] text-[0.65rem]">02/09/2023 at 10:43am</p>
+                </div>
+              </button>
+              <button> <img src="images/shape21.svg" class="w-[0.8rem] h-[0.8rem]" alt=""></button>
+
+            </div>
+            <div class="flex justify-between items-center mx-3 px-5">
+              <button class="flex items-center gap-x-4">
+                <div class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-7 h-7">
+                  <img src="images/shape19.svg" alt="">
+                </div>
+                <div class="text-xs">
+                  <p>Architechture16.doc</p>
+                  <p class="text-[#A19791] text-[0.65rem]">01/09/2023 at 08:21am</p>
+                </div>
+              </button>
+              <button> <img src="images/shape21.svg" class="w-[0.8rem] h-[0.8rem]" alt=""></button>
+
+            </div>
+          </div>
+        </div>
+        <!-- shared links -->
+        <div>
+          <div class="flex items-center px-5 py-3">
+            <div class="flex items-center gap-2">
+              <img src="images/shape20.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
+              <p class="font-medium text-xs">Shared Links</p>
+            </div>
+          </div>
+          <div class="flex flex-col gap-y-4">
+
+            <div class="flex justify-between items-center mx-3 px-5">
+              <button class="flex items-center gap-x-4">
+                <div class="flex justify-center items-center bg-[#F7F5F4] rounded-full w-7 h-7">
+                  <img src="images/shape20.svg" alt="">
+                </div>
+                <div class="text-xs">
+                  <p class="text-[0.65rem]">https://dribbble/hafsadeartisto...</p>
+                </div>
+              </button>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+</body>
+
+</html>
