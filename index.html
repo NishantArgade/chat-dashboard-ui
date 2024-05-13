@@ -18,7 +18,8 @@
 
       <div class="flex md:flex-col justify-around items-center gap-y-8 w-full">
         <button><img src="assets/images/shape.svg" alt=""></button>
-        <button id="chatBtn" class="bg-orange-600 p-[0.42rem] rounded-full"><img src="assets/images/shape2.svg" alt=""></button>
+        <button id="chatBtn" class="bg-orange-600 p-[0.42rem] rounded-full"><img src="assets/images/shape2.svg"
+            alt=""></button>
         <button><img src="assets/images/shape3.svg" alt=""></button>
         <button><img src="assets/images/shape4.svg" alt=""></button>
         <button><img src="assets/images/shape5.svg" alt=""></button>
@@ -29,10 +30,11 @@
     </section>
 
     <!-- main container -->
-    <main id="chatSectionContainer" class="flex md:flex-row flex-col md:flex-1 items-start bg-white w-full h-screen overflow-y-hidden">
+    <main id="chatSectionContainer"
+      class="flex md:flex-row flex-col md:flex-1 items-start bg-white w-full h-screen overflow-y-hidden">
 
       <!-- chat section sidebar -->
-      <section id="chatSectionSidebar" class="flex flex-col items-start bg-[#F7F5F4] py-3 w-full md:max-w-[30%] h-full">
+      <section id="chatSectionSidebar" class="flex flex-col items-start bg-[#F7F5F4] py-3 w-full md:max-w-[27%] h-full">
         <!-- user profile  -->
         <div class="border-gray-200 px-2 md:px-5 pb-5 border-b-[1.71px] w-full">
           <div class="flex items-center gap-x-5 px-2">
@@ -46,6 +48,7 @@
             </button>
           </div>
         </div>
+
         <!-- other sections -->
         <div class="flex flex-col mt-2 px-2 md:px-4 w-full">
           <!-- online users   -->
@@ -79,7 +82,7 @@
               <span class="font-medium text-[0.60rem] text-orange-500">18+</span>
             </button>
           </div>
-          <!-- auto -->
+
           <!-- message section -->
           <div class="flex justify-between items-center my-[0.70rem]">
             <p class="font-bold text-sm">Messages</p>
@@ -90,8 +93,8 @@
           </div>
           <!-- search bar -->
           <div class="relative flex shadow-sm rounded-xl">
-            <img src="assets/images/shape11.svg" class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2"
-              alt="">
+            <img src="assets/images/shape11.svg"
+              class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2" alt="">
             <input type="text"
               class="border-2 border-gray-100 focus:border-blue-500 focus:outline-none focus:ring-blue-500 focus:ring-opacity-50 px-4 py-2 p-[0.40rem] pr-3 rounded-xl w-full text-xs ps-8"
               placeholder="Search">
@@ -99,7 +102,7 @@
           <!-- user list  -->
           <div class="flex flex-col items-start gap-y-2 mt-4 h-[60vh] overflow-x-hidden overflow-y-auto">
 
-            <a href="#" class="relative flex items-center gap-x-3 p-2 w-full">
+            <div class="relative flex items-center gap-x-3 p-2 w-full cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp5.svg" alt="">
                 <span
@@ -118,10 +121,9 @@
                 class="right-2 absolute flex justify-center items-center bg-orange-500 rounded-full w-4 md:w-5 h-4 md:h-5 font-medium text-white">
                 <p class="text-[0.60rem] md:text-[0.70rem]">2</p>
               </span>
-            </a>
+            </div>
 
-
-            <a href="#" class="relative flex items-center gap-x-3 p-2">
+            <div class="relative flex items-center gap-x-3 p-2 cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp6.svg" alt="">
                 <span
@@ -136,10 +138,9 @@
                   <p>
                 </div>
               </div>
+            </div>
 
-            </a>
-
-            <a href="#" class="relative flex items-center gap-x-3 p-2">
+            <div class="relative flex items-center gap-x-3 p-2 cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp7.svg" alt="">
                 <span
@@ -147,19 +148,15 @@
                 </span>
               </div>
               <div>
-                <p class="font-medium text-sm">Jackson Roy</p>
+                <p class="font-medium text-sm">Hafsa shaikh</p>
                 <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
-                  <img src="assets/images/shape14.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
-                  <p class="line-clamp-1 w-full md:w-44 text-[#A19791] text-xs">Sent a picture
+                  <p class="line-clamp-1 w-full md:w-44 text-[#A19791] text-xs">Meet me before presentation...
                   <p>
                 </div>
               </div>
+            </div>
 
-            </a>
-
-
-
-            <a href="#" class="relative flex items-center gap-x-3 p-2">
+            <div class="relative flex items-center gap-x-3 p-2 cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp8.svg" alt="">
                 <span
@@ -173,23 +170,21 @@
                   <p>
                 </div>
               </div>
+            </div>
 
-            </a>
-
-
-
-            <button id="collegeGroupBtn" class="relative flex items-center gap-x-3 bg-white p-2 rounded-2xl w-full">
+            <div id="collegeGroupBtn"
+              class="relative flex items-center gap-x-3 bg-white p-2 rounded-2xl w-full cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
-                <img src="assets/images/dp2.svg" alt="">
+                <img src="assets/images/groupDp.svg" alt="">
                 <span
                   class="-right-[0.10rem] bottom-[0.10rem] absolute border-2 border-gray-100 bg-green-500 rounded-full w-[0.6rem] h-[0.6rem]">
                 </span>
               </div>
               <div>
-                <p class="font-medium text-sm">College Group</p>
+                <p class="font-medium text-sm text-start">College Group</p>
                 <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
-                  <img width="15px" src="assets/images/shape12.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
-                  <p class="line-clamp-1 w-auto text-[#A19791] text-xs"> Marina is typing...
+                  <p class="line-clamp-1 w-auto text-[#A19791] text-xs"><span class="text-gray-900"> You:</span> What
+                    about wednesday....
                   <p>
                 </div>
               </div>
@@ -197,9 +192,9 @@
                 class="right-2 absolute flex justify-center items-center bg-orange-500 rounded-full w-4 md:w-5 h-4 md:h-5 font-medium text-white">
                 <p class="text-[0.60rem] md:text-[0.70rem]">2</p>
               </span>
-            </button>
+            </div>
 
-            <a href="#" class="relative flex items-center gap-x-3 p-2 w-full">
+            <div class="relative flex items-center gap-x-3 p-2 w-full cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp2.svg" alt="">
                 <span
@@ -207,10 +202,10 @@
                 </span>
               </div>
               <div>
-                <p class="font-medium text-sm">Marina Jolly</p>
+                <p class="font-medium text-sm">Rockstar Benj</p>
                 <div class="flex items-center gap-x-[0.4rem] mt-[5px]">
                   <img width="15px" src="assets/images/shape12.svg" class="w-[0.8rem] h-[0.8rem]" alt="">
-                  <p class="line-clamp-1 w-auto text-[#A19791] text-xs"> Marina is typing...
+                  <p class="line-clamp-1 w-auto text-[#A19791] text-xs"> Sent an attachment
                   <p>
                 </div>
               </div>
@@ -218,10 +213,9 @@
                 class="right-2 absolute flex justify-center items-center bg-orange-500 rounded-full w-4 md:w-5 h-4 md:h-5 font-medium text-white">
                 <p class="text-[0.60rem] md:text-[0.70rem]">2</p>
               </span>
-            </a>
+            </div>
 
-
-            <a href="#" class="relative flex items-center gap-x-3 p-2">
+            <div class="relative flex items-center gap-x-3 p-2 cursor-pointer">
               <div class="relative rounded-full w-8 md:w-9 h-8 md:h-9">
                 <img src="assets/images/dp9.svg" alt="">
                 <span
@@ -235,29 +229,31 @@
                   <p>
                 </div>
               </div>
-
-            </a>
+            </div>
           </div>
         </div>
       </section>
 
       <!-- chat section -->
-      <section id="chatSection"  class="flex flex-col flex-1 py-3 w-full h-full">
+      <section id="chatSection" class="flex flex-col flex-1 py-3 w-full h-full">
 
         <!-- chat header -->
         <div class="border-gray-200 px-3 pb-3 border-b-[1.71px]">
           <div class="flex items-center md:gap-x-4 px-2">
 
             <button class="p-[0.15rem] rounded-full w-12 h-auto chat-profile ring-2 ring-gray-300 dark:ring-green-300">
-              <img src="assets/images/dp10.svg" alt="Bordered avatar">
+              <img src="assets/images/groupDp.svg" alt="Bordered avatar">
             </button>
 
             <div class="ml-2 w-full">
               <button class="mb-0 font-medium text-[0.80rem] md:text-sm chat-profile">College Group</button>
               <button class="flex -space-x-2 rtl:space-x-reverse">
-                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp10.svg" alt="">
-                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp10.svg" alt="">
-                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp10.svg" alt="">
+                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp10.svg"
+                  alt="">
+                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp4.svg"
+                  alt="">
+                <img class="border-2 border-white rounded-full w-4 md:w-5 h-4 md:h-5" src="assets/images/dp6.svg"
+                  alt="">
                 <div
                   class="flex justify-center items-center border-2 border-white bg-[#FF731D] rounded-full w-4 md:w-5 h-4 md:h-5 font-medium text-[0.6rem] text-white">
                   +7</div>
@@ -276,7 +272,7 @@
         </div>
 
         <!-- chat body -->
-        <div class="bg-white px-2 md:px-5 h-[40rem] overflow-auto">
+        <div class="bg-white px-2 md:px-5 pb-4 h-[40rem] overflow-auto">
 
           <!-- Yesterday chat -->
           <div class="pt-4">
@@ -303,7 +299,6 @@
               </div>
 
               <div class="flex gap-x-3">
-
                 <div href="#" class="relative rounded-full w-9 h-9">
                   <img src="assets/images/dp2.svg" alt="">
                   <span
@@ -329,6 +324,21 @@
           <div class="pt-4">
             <p class="pb-1 text-center text-xs">Today</p>
             <div class="flex flex-col gap-y-3">
+              <div class="flex gap-x-3">
+                <a href="#" class="relative rounded-full w-9 h-9">
+                  <img src="assets/images/dp3.svg" alt="">
+                </a>
+                <div class="flex flex-col flex-1">
+                  <div>
+                    <a href="#" class="font-medium text-xs">Lorel morph</a>
+                    <span class="text-[#A19791] text-[0.63rem]">09:20 am</span>
+                  </div>
+                  <div class="flex flex-col gap-y-2 mt-2">
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">Appologise guys i will
+                      not be able to contribute in presentation as i am having fever since 2 days.</p>
+                  </div>
+                </div>
+              </div>
 
               <div class="flex gap-x-3">
                 <a href="#" class="relative rounded-full w-9 h-9">
@@ -337,59 +347,36 @@
                 <div class="flex flex-col flex-1">
                   <div>
                     <a href="#" class="font-medium text-xs">Mojixa Tan</a>
-                    <span class="text-[#A19791] text-[0.63rem]">09:03 pm</span>
+                    <span class="text-[#A19791] text-[0.63rem]">10:45 am</span>
                   </div>
                   <div class="flex flex-col gap-y-2 mt-2">
-                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">Hi, how are you all?
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">No issue, take some
+                      rest.
                     </p>
-                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">How many of you
-                      prepared the
-                      prsentation?</p>
+                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">What about others?</p>
                   </div>
                 </div>
               </div>
-
-
-              <div class="flex gap-x-3">
-                <a href="#" class="relative rounded-full w-9 h-9">
-                  <img src="assets/images/dp4.svg" alt="">
-                </a>
-                <div class="flex flex-col flex-1">
-                  <div>
-                    <a href="#" class="font-medium text-xs">Mojixa Tan</a>
-                    <span class="text-[#A19791] text-[0.63rem]">09:03 pm</span>
-                  </div>
-                  <div class="flex flex-col gap-y-2 mt-2">
-                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">Hi, how are you all?
-                    </p>
-                    <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">How many of you
-                      prepared the
-                      prsentation?</p>
-                  </div>
-                </div>
-              </div>
-
             </div>
           </div>
 
           <!-- Your Chat -->
           <div class="flex justify-end py-4 md:py-2">
             <div class="flex gap-x-3">
-
               <div class="flex flex-col flex-1">
                 <div class="flex justify-end items-end gap-x-1">
                   <a href="#" class="font-medium text-xs">You</a>
-                  <a class="text-[#A19791] text-[0.63rem]"> 09:03 pm</a>
+                  <a class="text-[#A19791] text-[0.63rem]"> 10:45 am</a>
                 </div>
                 <div class="flex flex-col items-end gap-y-2 mt-2">
-                  <p class="bg-[#F7F5F4] p-2 rounded-b-xl rounded-tr-xl w-fit max-w-96 text-xs">Hi, how are you all?</p>
+                  <p class="bg-[#FF731D] p-2 rounded-b-xl rounded-tl-xl w-fit max-w-96 text-white text-xs">I just
+                    completed it last night.</p>
                 </div>
               </div>
               <a href="#" class="relative rounded-full w-9 h-9">
-                <img src="assets/images/dp4.svg" alt="">
+                <img src="assets/images/dp10.svg" alt="">
               </a>
             </div>
-
           </div>
 
           <!-- user typing -->
@@ -408,8 +395,8 @@
         <!-- chat input -->
         <div class="flex justify-around items-center px-3 md:px-8 pt-1 border-t-[1px]">
           <div class="relative flex rounded-xl w-[65%]">
-            <img src="assets/images/shape13.svg" class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2"
-              alt="">
+            <img src="assets/images/shape13.svg"
+              class="top-1/2 left-3 absolute w-[0.80rem] h-[0.80rem] -translate-y-1/2" alt="">
             <input type="text" placeholder="Your Message..."
               class="border-2 border-gray-100 focus:border-blue-500 focus:outline-none focus:ring-blue-500 focus:ring-opacity-50 p-[0.40rem] pr-2 rounded-xl w-full text-xs ps-8">
           </div>
@@ -432,11 +419,13 @@
       </section>
 
     </main>
+
     <!-- right sidebar -->
-    <section id="profileInfoLeftSidebar" class="flex-1 border-gray-200 hidden py-3 border-l-[1.71px] w-full md:max-w-[22%] h-screen overflow-x-hidden overflow-y-auto">
+    <section id="profileInfoLeftSidebar"
+      class="flex-1 border-gray-200 hidden py-3 border-l-[1.71px] w-full md:max-w-[22%] h-screen transition-all duration-500 overflow-x-hidden overflow-y-auto ease-in">
       <!-- header -->
       <div class="flex flex-col items-center gap-x-4 px-5 pb-2">
-        <img class="rounded-full w-11 h-11" src="assets/images/dp10.svg" alt="Bordered avatar">
+        <img class="rounded-full w-11 h-11" src="assets/images/groupDp.svg" alt="Bordered avatar">
         <p class="mt-1 font-semibold text-sm">College Group</p>
         <p class="mt-1 text-[#A19791] text-xs">@collegefriends</p>
       </div>
@@ -542,8 +531,7 @@
     </section>
   </div>
 
-
-  <script src="assets/js/script.js" ></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>

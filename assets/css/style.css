@@ -4,6 +4,7 @@
   box-sizing: border-box;
 }
 
+
 /* styles for scrollbar */
 ::-webkit-scrollbar {
     width: 6px;
