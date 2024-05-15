@@ -1,7 +1,7 @@
 const collegeGroupBtnEle = document.querySelector("#collegeGroupBtn");
 const chatSectionSidebarEle = document.querySelector("#chatSectionSidebar");
-const profileInfoLeftSidebarEle = document.querySelector(
-  "#profileInfoLeftSidebar"
+const profileInfoRightSidebarEle = document.querySelector(
+  "#profileInfoRightSidebar"
 );
 const chatSectionContainerEle = document.querySelector("#chatSectionContainer");
 const chatProfileEles = document.querySelectorAll(".chat-profile");
@@ -19,7 +19,8 @@ chatProfileEles.forEach((chatProfileEle) => {
 
     chatSectionContainerEle.classList.add("hidden");
     chatSectionContainerEle.classList.add("md:flex");
-    profileInfoLeftSidebarEle.classList.toggle("hidden");
+    profileInfoRightSidebarEle.classList.toggle("hidden");
+    profileInfoRightSidebarEle.classList.toggle("md:hidden");
   });
 });
 
@@ -30,5 +31,5 @@ chatBtnEle.addEventListener("click", function () {
 
   chatSectionContainerEle.classList.remove("hidden");
 //   chatSectionContainerEle.classList.remove("md:flex");
-  profileInfoLeftSidebarEle.classList.add("hidden");
+  profileInfoRightSidebarEle.classList.add("hidden");
 });
